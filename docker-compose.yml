@@ -1,0 +1,43 @@
+version: "3"
+
+services:
+  mongo:
+    image: mongo
+    container_name: mongo-zoox    
+    ports:
+      - 27017:27017
+    expose:
+      - 27017      
+    restart: always
+    networks:
+      - redelocal
+    stdin_open: true
+    tty: true
+
+  backend:
+    image: back-zoox
+    container_name: back-zoox
+    build: ./backend    
+    ports:
+      - 3535:3535
+    networks:
+      - redelocal              
+    stdin_open: true
+    tty: true
+    
+
+  frontend:
+    image: front-zoox
+    container_name: front-zoox
+    build: ./frontend    
+    ports:
+      - 8080:8080            
+    stdin_open: true
+    tty: true
+
+networks:
+  redelocal:
+    driver: 'bridge'
+    
+
+ 
