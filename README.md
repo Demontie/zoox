@@ -1,4 +1,9 @@
-### Requerido
+## Especificações
+- Node >= 12.18.3
+- Docker >= 19.03.12
+- yarn >= 1.22.5
+
+## Requerido
 * [Docker installed](https://www.docker.com/)
 
 
@@ -24,7 +29,7 @@ $ git clone https://github.com/Demontie/zoox.git
 #### Rodar frontend
 
 ```bash
-# Pasta do clone
+# Pasta do frontend
 $ cd frontend
 
 # Variáveis de ambiente
@@ -40,7 +45,7 @@ $ yarn serve
 #### Rodar backend
 
 ```bash
-# Pasta do clone
+# Pasta do backend
 $ cd backend
 
 # Variáveis de ambiente

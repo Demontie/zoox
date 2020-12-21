@@ -1,24 +1,23 @@
-# Zoox
+## Especificações
+- Node >= 12.18.3
+- Docker >= 19.03.12
+- yarn >= 1.22.5
 
-## Project setup
-```
-yarn install
-```
+## Instalação na maquina local
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+```bash
+# Clonar repositório
+$ git clone https://github.com/Demontie/zoox.git
 
-### Compiles and minifies for production
-```
-yarn build
-```
+# Pasta do frontend
+$ cd frontend
 
-### Lints and fixes files
-```
-yarn lint
-```
+# Variáveis de ambiente
+$ cp .env.example .env
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Instalar dependências
+$ yarn install
+
+# Execute a aplicação
+$ yarn serve
+```
