@@ -72,8 +72,13 @@ $ cp frontend/.env.example frontend/.env
 
 $ cp backend/.env.example backend/.env
 
+# Configuração para o banco de dados é importante preencher o ormconfig.json corretamente para conexão com o banco
 $ cp backend/ormconfig.example.json backend/ormconfig.json
 
 # Subir a aplicação
-$ docker-compose up -d
+$ docker-compose up -d --build
 ```
+
+## Obervação
+
+Caso utilize o docker dentro do arquivo ormconfig.json utilizar 'zoox_db' no 'host' para que o container identifique o banco que irá utilizar

@@ -18,7 +18,8 @@ services:
       - zoox_db
     ports:
       - 3535:3535
-
+    
+      
   frontend:
     image: front-zoox
     container_name: front-zoox

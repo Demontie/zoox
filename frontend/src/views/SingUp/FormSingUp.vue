@@ -99,7 +99,7 @@ export default {
       }
 
       await this.register(this.form);
-      this.$router.push('/singin');
+      this.$router.push('/');
 
       return true;
     }
